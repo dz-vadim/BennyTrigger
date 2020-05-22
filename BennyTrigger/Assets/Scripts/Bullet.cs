@@ -1,17 +1,30 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
     public float speed;
-    // Start is called before the first frame update
+    private Vector3 lastPosition;
     void Start()
     {
-
+        lastPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        transform.Translate(Vector3.up * speed/10);
+        transform.Translate(Vector3.up * speed * Time.deltaTime);
+
+        RaycastHit hit;
+        if (Physics.Linecast(lastPosition, transform.position, out hit))
+        {            
+            if (hit.transform.gameObject.tag == "Enemy")
+            {
+                Destroy(hit.transform.gameObject);
+                print(hit.transform.name);
+            }           
+            Destroy(gameObject);
+        }
+        Destroy(gameObject, 10);
     }
 }

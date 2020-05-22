@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shoot : MonoBehaviour
 {
     public GameObject bulletPrefab;
+    public Transform shotSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,11 +13,11 @@ public class Shoot : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(bulletPrefab, gameObject.transform);
+            Instantiate(bulletPrefab, shotSpawn.position, shotSpawn.rotation);
         }
     }
 /*    private void OnCollisionEnter(Collision collision)

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -118,7 +118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-61310
+  m_Name: pb_Mesh-9638
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -443,6 +443,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4175222109468082087, guid: 5857386e8681cfa4f9c3f02a311a7db9,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5857386e8681cfa4f9c3f02a311a7db9, type: 3}
 --- !u!1 &294778281 stripped
@@ -557,6 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 2532833412297066759, guid: 693bf292ec6f54647b480d87479c13df,
     type: 3}
+  shotSpawn: {fileID: 410106125}
 --- !u!1001 &528083895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -725,7 +731,7 @@ PrefabInstance:
     - target: {fileID: 3432130004319091597, guid: e097f9c8263d8ef40b2e0c0e8646444d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -4
+      value: -11
       objectReference: {fileID: 0}
     - target: {fileID: 3432130004319091597, guid: e097f9c8263d8ef40b2e0c0e8646444d,
         type: 3}
@@ -1043,6 +1049,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8189595093659794679, guid: c97b383e2588b4e4f92eb28b4926bbf1,
+        type: 3}
+      propertyPath: m_Name
+      value: Platform
+      objectReference: {fileID: 0}
     - target: {fileID: 795953825610352155, guid: c97b383e2588b4e4f92eb28b4926bbf1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1108,11 +1119,6 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 16929727}
-    - target: {fileID: 8189595093659794679, guid: c97b383e2588b4e4f92eb28b4926bbf1,
-        type: 3}
-      propertyPath: m_Name
-      value: Platform
-      objectReference: {fileID: 0}
     - target: {fileID: 8748164108260435062, guid: c97b383e2588b4e4f92eb28b4926bbf1,
         type: 3}
       propertyPath: m_Tangents.Array.data[128].x
