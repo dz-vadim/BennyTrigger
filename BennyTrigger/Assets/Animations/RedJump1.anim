@@ -384,4 +384,19 @@ AnimationClip:
     script: {fileID: 0}
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: ActivateLaser
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 8
+    functionName: SetSpeed
+    data: 
+    objectReferenceParameter: {fileID: 11500000, guid: 224114eeef74f4a4c907e632adc1c5c5,
+      type: 3}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

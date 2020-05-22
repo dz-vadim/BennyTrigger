@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    public float speed;
+    public GameObject bulletPrefab;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,10 @@ public class Shoot : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate (Vector3.up * speed);
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(bulletPrefab, gameObject.transform);
+        }
     }
 /*    private void OnCollisionEnter(Collision collision)
     {

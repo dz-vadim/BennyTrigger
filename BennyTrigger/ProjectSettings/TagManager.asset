@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Laser
   - StartJump
+  - Enemy
   layers:
   - Default
   - TransparentFX
