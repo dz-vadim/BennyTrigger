@@ -7,6 +7,7 @@ TagManager:
   - Laser
   - StartJump
   - Enemy
+  - StartSwipe
   layers:
   - Default
   - TransparentFX
