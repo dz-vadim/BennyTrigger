@@ -5,9 +5,12 @@ public class StartAnimationInTrigger : MonoBehaviour
     public float moveSpeed;
     private float speedFactor = 0.1f;
     public GameObject laser;
+    public Camera mainCamera;
+   // public Camera mainCamera;
     void FixedUpdate()
     {
         transform.position += transform.forward * moveSpeed * speedFactor;
+      //  mainCamera.transform.Translate(transform.position);
     }
     private void OnTriggerEnter(Collider collider)
     {
