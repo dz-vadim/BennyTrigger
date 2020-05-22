@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour
             if (hit.transform.gameObject.tag == "Enemy")
             {
                 Destroy(hit.transform.gameObject);
-                print(hit.transform.name);
+               // print(hit.transform.name);
             }           
             Destroy(gameObject);
         }
