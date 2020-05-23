@@ -84,7 +84,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  playerY: 0
+  isFlip: 0
   laser: {fileID: 243211401925072620}
+  mainCamera: {fileID: 0}
 --- !u!1 &3262686735753613963
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +278,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3432130004319091597}
     m_Modifications:
+    - target: {fileID: 410106126, guid: ea09a58fdb3474a4ea5b563d3830e45c, type: 3}
+      propertyPath: shotSpawn
+      value: 
+      objectReference: {fileID: 943621972}
     - target: {fileID: 243211401935264956, guid: ea09a58fdb3474a4ea5b563d3830e45c,
         type: 3}
       propertyPath: m_Name
@@ -335,10 +342,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 410106126, guid: ea09a58fdb3474a4ea5b563d3830e45c, type: 3}
-      propertyPath: shotSpawn
-      value: 
-      objectReference: {fileID: 943621972}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea09a58fdb3474a4ea5b563d3830e45c, type: 3}
 --- !u!4 &243211402475610852 stripped
