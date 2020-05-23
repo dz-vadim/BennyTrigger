@@ -9,13 +9,16 @@ public class StartAnimationInTrigger : MonoBehaviour
 
     private float speedFactor = 0.1f;
     public GameObject laser;
+    public GameObject FinishMassage;
     public Camera mainCamera;
     private Transform playerTransform;
+
 
    // public Camera mainCamera;
    private void Start()
     {
         isFlip = false;
+        FinishMassage.SetActive(false);
     }
     void FixedUpdate()
     {
@@ -48,6 +51,11 @@ public class StartAnimationInTrigger : MonoBehaviour
             speedFactor = 0;
         }
 
+        if (collider.tag == "Finish")
+        {
+            Time.timeScale = 0;
+            FinishMassage.SetActive(true);
+        }
     }
     private void SetSpeed()
     {
