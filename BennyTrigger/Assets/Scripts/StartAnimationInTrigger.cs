@@ -71,7 +71,7 @@ public class StartAnimationInTrigger : MonoBehaviour
         speedFactor = 0.1f;
         laser.SetActive(false);
         transform.rotation = Quaternion.Euler(0, 0, 0);
-        transform.position = new Vector3(transform.position.x, -22, transform.position.z);
+        transform.position = new Vector3(transform.position.x, -22.3f, transform.position.z);
 
     }
     private void ActivateLaser()
